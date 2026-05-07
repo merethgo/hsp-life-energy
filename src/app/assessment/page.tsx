@@ -38,16 +38,20 @@ function readProgress() {
     return { answers: {}, currentIndex: 0 };
   }
 
-  const parsedProgress = JSON.parse(storedProgress) as {
-    answers?: AssessmentAnswerMap;
-    currentIndex?: number;
-  };
+  try {
+    const parsedProgress = JSON.parse(storedProgress) as {
+      answers?: AssessmentAnswerMap;
+      currentIndex?: number;
+    };
 
-  return {
-    answers: parsedProgress.answers ?? {},
-    currentIndex:
-      typeof parsedProgress.currentIndex === "number" ? parsedProgress.currentIndex : 0,
-  };
+    return {
+      answers: parsedProgress.answers ?? {},
+      currentIndex:
+        typeof parsedProgress.currentIndex === "number" ? parsedProgress.currentIndex : 0,
+    };
+  } catch {
+    return { answers: {}, currentIndex: 0 };
+  }
 }
 
 export default function AssessmentPage() {
@@ -130,7 +134,7 @@ export default function AssessmentPage() {
 
   if (!ready) {
     return (
-      <main className="mx-auto flex min-h-screen w-full max-w-3xl items-center justify-center px-6 py-10">
+      <main className="mx-auto flex min-h-screen w-full max-w-3xl items-center justify-center px-4 py-8 sm:px-6 sm:py-10">
         <p className="text-sm text-[--muted]">正在准备测评…</p>
       </main>
     );
@@ -140,12 +144,12 @@ export default function AssessmentPage() {
   const currentAnswer = answers[question.id];
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-3xl items-center px-6 py-10">
-      <div className="card-surface w-full p-6 md:p-8">
+    <main className="mx-auto flex min-h-screen w-full max-w-3xl items-center px-4 py-8 sm:px-6 sm:py-10">
+      <div className="card-surface w-full p-5 sm:p-6 md:p-8">
         <div className="flex items-center justify-between gap-4">
           <div>
             <p className="text-sm text-[--muted]">高敏感生命能量测评</p>
-            <h1 className="mt-2 text-2xl font-semibold tracking-tight md:text-3xl">
+            <h1 className="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
               第 {currentIndex + 1} 题
             </h1>
           </div>
@@ -154,26 +158,26 @@ export default function AssessmentPage() {
           </p>
         </div>
 
-        <div className="mt-5 h-2 overflow-hidden rounded-full bg-[--border]">
+        <div className="mt-4 h-2 overflow-hidden rounded-full bg-[--border] sm:mt-5">
           <div
             className="h-full rounded-full bg-[--primary] transition-all"
             style={{ width: `${((currentIndex + 1) / total) * 100}%` }}
           />
         </div>
 
-        <div className="mt-10">
-          <p className="text-xl leading-9 md:text-2xl md:leading-10">{question.text}</p>
-          <div className="mt-4 flex items-center justify-between gap-3 text-sm text-[--muted]">
+        <div className="mt-6 sm:mt-8">
+          <p className="text-xl leading-8 sm:text-[1.7rem] sm:leading-10">{question.text}</p>
+          <div className="mt-3 flex flex-col gap-2 text-sm text-[--muted] sm:mt-4 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
             <span>
               已完成 {answeredCount} / {total}
             </span>
             <span>
               {currentAnswer
                 ? `当前选择：${SCALE_LABELS.find((item) => item.value === currentAnswer)?.label}`
-                : "请选择最贴近你最近两周状态的选项"}
+                : "请按照你的真实状态选择"}
             </span>
           </div>
-          <div className="mt-8 grid gap-3">
+          <div className="mt-5 grid gap-3 sm:mt-6">
             {SCALE_LABELS.map((item) => {
               const isActive = currentAnswer === item.value;
               return (
@@ -196,7 +200,7 @@ export default function AssessmentPage() {
           </div>
         </div>
 
-        <div className="mt-8 flex items-center justify-between gap-3">
+        <div className="mt-6 flex items-center justify-between gap-3 sm:mt-8">
           <button
             className="secondary-button"
             disabled={currentIndex === 0 || autoAdvancing}

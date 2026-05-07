@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "product_name": "高敏感生命能量测评",
+    "version": "v2.1",
+    "scale": {
+      "min": 1,
+      "max": 5,
+      "labels": {
+        "1": "完全不符合",
+        "2": "比较不符合",
+        "3": "一般",
+        "4": "比较符合",
+        "5": "非常符合"
+      }
+    },
+    "dimensions": {
+      "input": "感知输入强度",
+      "emotion": "情绪负荷",
+      "processing": "过度加工倾向",
+      "boundary": "边界稳定度",
+      "recovery": "恢复能力",
+      "environment": "环境适配度",
+      "risk": "风险提醒",
+      "validity": "效度"
+    },
+    "display_reverse_dimensions": ["boundary", "environment"]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "text": "我常常会比身边的人更快察觉到气氛、语气或细节的变化。",
+      "dimension": "input",
+      "sub_dimension": "细微觉察",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 2,
+      "text": "周围环境稍微有点吵、乱、杂，我就更容易累。",
+      "dimension": "input",
+      "sub_dimension": "刺激负荷",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 3,
+      "text": "别人的情绪变化，即使对方没有明说，我也常常能感觉得到。",
+      "dimension": "input",
+      "sub_dimension": "情绪接收",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 4,
+      "text": "强光、强味道、刺耳声音或某些材质，常常会让我明显感到不舒服。",
+      "dimension": "input",
+      "sub_dimension": "感官敏感",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 5,
+      "text": "在陌生环境里，我通常需要更多时间适应。",
+      "dimension": "input",
+      "sub_dimension": "适应速度",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 0.9
+    },
+    {
+      "id": 6,
+      "text": "当外界同时发生很多事情时，我会明显感觉自己一下子接收不过来。",
+      "dimension": "input",
+      "sub_dimension": "输入饱和",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 7,
+      "text": "我会被音乐、画面、文字或某种美感明显触动。",
+      "dimension": "input",
+      "sub_dimension": "审美触动",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.0
+    },
+
+    {
+      "id": 8,
+      "text": "一件事过去之后，我的感受通常不会很快散去。",
+      "dimension": "emotion",
+      "sub_dimension": "情绪停留",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 9,
+      "text": "当别人向我倾诉时，我很容易把他们的情绪带回自己身上。",
+      "dimension": "emotion",
+      "sub_dimension": "情绪承接",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 10,
+      "text": "我的内在世界通常很丰富，很多感受和想法会在心里停留很久。",
+      "dimension": "emotion",
+      "sub_dimension": "内在丰富",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.1
+    },
+    {
+      "id": 11,
+      "text": "即使外表看起来没什么，我的内在也常常已经承载了很多感受。",
+      "dimension": "emotion",
+      "sub_dimension": "内在承载",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 12,
+      "text": "看到太刺激、太暴力或太混乱的内容时，我会明显感到不适。",
+      "dimension": "emotion",
+      "sub_dimension": "刺激回避",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 13,
+      "text": "很多时候，我知道自己有感觉，但不太确定该怎样把它慢慢疏通出来。",
+      "dimension": "emotion",
+      "sub_dimension": "释放困难",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 14,
+      "text": "一次明显的情绪波动之后，我通常需要比较充足的时间，才能慢慢恢复。",
+      "dimension": "emotion",
+      "sub_dimension": "恢复缓慢",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+
+    {
+      "id": 15,
+      "text": "别人的一句话，我会在心里反复想很久。",
+      "dimension": "processing",
+      "sub_dimension": "反复思考",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 16,
+      "text": "做决定时，我很容易把各种可能性想得很复杂。",
+      "dimension": "processing",
+      "sub_dimension": "深度权衡",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 17,
+      "text": "我常常会注意到别人没有留意到的联系、细节或变化。",
+      "dimension": "processing",
+      "sub_dimension": "深度加工",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 18,
+      "text": "当我被别人观察、评估，或者被催着当场表现时，我会更容易紧张和失常。",
+      "dimension": "processing",
+      "sub_dimension": "被观察表现波动",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 19,
+      "text": "即使事情已经结束了，我的大脑也常常停不下来。",
+      "dimension": "processing",
+      "sub_dimension": "停不下来",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 20,
+      "text": "在行动之前，我通常需要更多时间确认自己已经想清楚了。",
+      "dimension": "processing",
+      "sub_dimension": "行动前加工",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.1
+    },
+    {
+      "id": 21,
+      "text": "比起表面的来往，我通常更喜欢有深度、能真正触及内心的交流。",
+      "dimension": "processing",
+      "sub_dimension": "深度交流偏好",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 0.9
+    },
+
+    {
+      "id": 22,
+      "text": "即使我心里不愿意，我也常常很难直接拒绝别人。",
+      "dimension": "boundary",
+      "sub_dimension": "拒绝困难",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 23,
+      "text": "别人一有情绪或状态变化，我自己也很容易跟着被牵动。",
+      "dimension": "boundary",
+      "sub_dimension": "情绪牵引",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 24,
+      "text": "在关系里，我常常会先考虑别人的需求，再轮到自己的感受。",
+      "dimension": "boundary",
+      "sub_dimension": "自我靠后",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 25,
+      "text": "即使我已经表达了自己的边界，心里也常常还会有一些不安或内疚。",
+      "dimension": "boundary",
+      "sub_dimension": "边界内疚",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 26,
+      "text": "在关系里，我很怕因为表达真实想法而让对方失望。",
+      "dimension": "boundary",
+      "sub_dimension": "冲突回避",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 27,
+      "text": "我需要花很大力气，才能不被别人的情绪和评价带走。",
+      "dimension": "boundary",
+      "sub_dimension": "外界牵引",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 28,
+      "text": "当关系里出现紧张或冲突时，我通常会先把自己的感受往后放。",
+      "dimension": "boundary",
+      "sub_dimension": "自我噤声",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+
+    {
+      "id": 29,
+      "text": "当我累了时，我通常知道什么方式对自己真正有帮助。",
+      "dimension": "recovery",
+      "sub_dimension": "恢复认知",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 30,
+      "text": "经历压力或情绪波动后，我能在相对合理的时间里慢慢缓回来。",
+      "dimension": "recovery",
+      "sub_dimension": "恢复速度",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 31,
+      "text": "睡觉、独处或暂停，对我通常真的能起到恢复作用。",
+      "dimension": "recovery",
+      "sub_dimension": "恢复有效性",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 32,
+      "text": "我能觉察到自己快要过载了，并及时让自己停下来。",
+      "dimension": "recovery",
+      "sub_dimension": "提前止损",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 33,
+      "text": "即使一段时间很忙，我也能尽量保留一点恢复自己的空间。",
+      "dimension": "recovery",
+      "sub_dimension": "恢复空间",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 34,
+      "text": "当状态不好时，我不会只逼自己撑，而会想办法照顾自己。",
+      "dimension": "recovery",
+      "sub_dimension": "自我照顾",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 35,
+      "text": "我觉得自己拥有一些稳定、可重复的恢复方式。",
+      "dimension": "recovery",
+      "sub_dimension": "恢复系统",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+
+    {
+      "id": 36,
+      "text": "我现在所处的环境，常常让我需要额外消耗很多能量去适应。",
+      "dimension": "environment",
+      "sub_dimension": "环境不匹配",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 37,
+      "text": "人多、节奏快、变化频繁的场景，对我来说特别耗电。",
+      "dimension": "environment",
+      "sub_dimension": "场景耗能",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 38,
+      "text": "如果长期没有独处空间，我的状态会明显变差。",
+      "dimension": "environment",
+      "sub_dimension": "独处需求",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 39,
+      "text": "我对工作、关系或生活节奏的要求，往往和周围人不太一样。",
+      "dimension": "environment",
+      "sub_dimension": "节奏差异",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 0.8
+    },
+    {
+      "id": 40,
+      "text": "如果长期待在不适合自己的环境里，我会很快出现明显的耗竭感。",
+      "dimension": "environment",
+      "sub_dimension": "环境透支",
+      "layer": "state",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 41,
+      "text": "一个环境是否安静、有边界感、节奏稳定，会明显影响我能不能发挥出正常状态。",
+      "dimension": "environment",
+      "sub_dimension": "环境适配条件",
+      "layer": "trait",
+      "reverse": false,
+      "weight": 1.0
+    },
+    {
+      "id": 42,
+      "text": "如果能处在更适合自己的节奏里，我的状态通常会明显更稳定。",
+      "dimension": "environment",
+      "sub_dimension": "节奏适配",
+      "layer": "state",
+      "reverse": true,
+      "weight": 1.2
+    },
+
+    {
+      "id": 43,
+      "text": "最近两周，我常常有一种“已经很累了，但还停不下来”的感觉。",
+      "dimension": "risk",
+      "sub_dimension": "持续激活",
+      "layer": "risk",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 44,
+      "text": "最近两周，我经常在社交或关系之后感到明显耗竭。",
+      "dimension": "risk",
+      "sub_dimension": "社交耗竭",
+      "layer": "risk",
+      "reverse": false,
+      "weight": 1.2
+    },
+    {
+      "id": 45,
+      "text": "最近两周，我会觉得自己像一直在撑着，但没有真正缓过来。",
+      "dimension": "risk",
+      "sub_dimension": "长期透支",
+      "layer": "risk",
+      "reverse": false,
+      "weight": 1.5
+    },
+
+    {
+      "id": 46,
+      "text": "我的回答反映的是我最近真实的状态，而不是我希望自己看起来的样子。",
+      "dimension": "validity",
+      "sub_dimension": "真实性",
+      "layer": "validity",
+      "reverse": false,
+      "weight": 1.0,
+      "validity_tag": "authenticity"
+    },
+    {
+      "id": 47,
+      "text": "为了让结果看起来更好一点，我会忍不住把一些答案往“没那么严重”选。",
+      "dimension": "validity",
+      "sub_dimension": "粉饰倾向",
+      "layer": "validity",
+      "reverse": false,
+      "weight": 1.0,
+      "validity_tag": "defensiveness"
+    },
+    {
+      "id": 48,
+      "text": "请直接选择“比较不符合”，这是一道用于确认作答状态的题目。",
+      "dimension": "validity",
+      "sub_dimension": "注意力确认",
+      "layer": "validity",
+      "reverse": false,
+      "weight": 1.0,
+      "validity_tag": "attention"
+    }
+  ]
+}

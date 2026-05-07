@@ -1,0 +1,215 @@
+{
+  "product": {
+    "name": "高敏感生命能量测评",
+    "hero_title": "高敏感生命能量测评",
+    "hero_subtitle": "看见你的敏感方式、压力模式、边界状态与恢复节奏",
+    "hero_notice": "本测评共 48 题，请根据最近两周的真实状态作答。",
+    "start_button": "开始测评"
+  },
+  "pages": {
+    "basic_info": {
+      "title": "基础信息",
+      "submit_button": "开始答题",
+      "fields": [
+        {
+          "key": "name",
+          "label": "称呼",
+          "type": "text",
+          "required": false,
+          "placeholder": "请输入你的称呼"
+        },
+        {
+          "key": "age_range",
+          "label": "年龄阶段",
+          "type": "single_select",
+          "required": true,
+          "options": [
+            "18-24",
+            "25-30",
+            "31-35",
+            "36-45",
+            "46+"
+          ]
+        },
+        {
+          "key": "life_status",
+          "label": "生活状态",
+          "type": "single_select",
+          "required": true,
+          "options": [
+            "学生",
+            "上班族",
+            "自由职业",
+            "创业中",
+            "暂时休整中",
+            "其他"
+          ]
+        },
+        {
+          "key": "stress_level",
+          "label": "总体压力感",
+          "type": "single_select",
+          "required": true,
+          "options": [
+            "很低",
+            "偏低",
+            "一般",
+            "偏高",
+            "很高"
+          ]
+        },
+        {
+          "key": "contact",
+          "label": "联系方式",
+          "type": "text",
+          "required": false,
+          "placeholder": "请输入手机号或微信号"
+        }
+      ]
+    },
+    "assessment": {
+      "title": "高敏感生命能量测评",
+      "description": "请根据最近两周的真实状态作答",
+      "show_dimension_label": false,
+      "progress_format": "{current} / {total}",
+      "nav_buttons": {
+        "prev": "上一题",
+        "next": "下一题",
+        "submit": "提交测评"
+      },
+      "scale": {
+        "min": 1,
+        "max": 5,
+        "labels": {
+          "1": "完全不符合",
+          "2": "比较不符合",
+          "3": "一般",
+          "4": "比较符合",
+          "5": "非常符合"
+        }
+      }
+    },
+    "report": {
+      "title": "你的高敏感生命能量画像",
+      "subtitle": "这不是为了定义你，而是帮助你更清楚地理解自己当前的运作方式。",
+      "save_button": "保存我的报告",
+      "download_button": "下载PDF",
+      "show_download_button": false,
+      "sections": [
+        {
+          "key": "overview",
+          "title": "你的当前状态总览"
+        },
+        {
+          "key": "core_indices",
+          "title": "先看懂这两个最重要的指标"
+        },
+        {
+          "key": "dimension_chart",
+          "title": "六个维度，正在共同影响你的高敏感体验"
+        },
+        {
+          "key": "archetype",
+          "title": "你当前更接近哪一种高敏感模式"
+        },
+        {
+          "key": "dimension_details",
+          "title": "你的高敏感，是怎样在生活里发生作用的"
+        },
+        {
+          "key": "risk_alerts",
+          "title": "这几个地方，值得你温柔地多留意一点"
+        },
+        {
+          "key": "suggestions",
+          "title": "如果你只先做三件事，我建议你从这里开始"
+        },
+        {
+          "key": "closing",
+          "title": "给你的最后一句话"
+        }
+      ]
+    }
+  },
+  "dimension_ui": {
+    "input": {
+      "name": "感知输入强度",
+      "short_name": "感知输入",
+      "chart_color": "#7AA2E3",
+      "icon": "signal"
+    },
+    "emotion": {
+      "name": "情绪负荷",
+      "short_name": "情绪负荷",
+      "chart_color": "#E58A8A",
+      "icon": "heart"
+    },
+    "processing": {
+      "name": "过度加工倾向",
+      "short_name": "过度加工",
+      "chart_color": "#9A8DE0",
+      "icon": "brain"
+    },
+    "boundary": {
+      "name": "边界稳定度",
+      "short_name": "边界稳定",
+      "chart_color": "#E5B96B",
+      "icon": "shield"
+    },
+    "recovery": {
+      "name": "恢复能力",
+      "short_name": "恢复能力",
+      "chart_color": "#6FBE98",
+      "icon": "leaf"
+    },
+    "environment": {
+      "name": "环境适配度",
+      "short_name": "环境适配",
+      "chart_color": "#8BB8B0",
+      "icon": "home"
+    }
+  },
+  "questions_by_page": [
+    {
+      "page": 1,
+      "question_ids": [1, 2, 3, 4, 5, 6]
+    },
+    {
+      "page": 2,
+      "question_ids": [7, 8, 9, 10, 11, 12]
+    },
+    {
+      "page": 3,
+      "question_ids": [13, 14, 15, 16, 17, 18]
+    },
+    {
+      "page": 4,
+      "question_ids": [19, 20, 21, 22, 23, 24]
+    },
+    {
+      "page": 5,
+      "question_ids": [25, 26, 27, 28, 29, 30]
+    },
+    {
+      "page": 6,
+      "question_ids": [31, 32, 33, 34, 35, 36]
+    },
+    {
+      "page": 7,
+      "question_ids": [37, 38, 39, 40, 41, 42]
+    },
+    {
+      "page": 8,
+      "question_ids": [43, 44, 45, 46, 47, 48]
+    }
+  ],
+  "frontend_notes": {
+    "question_order": "按 id 顺序展示",
+    "dimension_label_visibility": "答题页不展示",
+    "recommended_autonext": true,
+    "autonext_delay_ms": 250,
+    "save_local_progress": true,
+    "progress_storage_key": "hsle_assessment_progress",
+    "report_storage_key": "hsle_assessment_report"
+  }
+}
